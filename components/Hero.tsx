@@ -37,6 +37,8 @@ export default function Hero() {
         muted
         loop
         playsInline
+        preload="auto"
+        poster="/videos/brand-storytelling.jpg"
         className="absolute inset-0 w-full h-full object-cover z-0"
         style={{
           scale: 1.15,

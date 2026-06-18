@@ -8,6 +8,9 @@ export default function CustomCursor() {
   const [isHovering, setIsHovering] = useState(false)
 
   useEffect(() => {
+    // Detect touch device and skip cursor on touch devices
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0
+    if (isTouchDevice) return
     const handleMouseMove = (e: MouseEvent) => {
       setMousePos({ x: e.clientX, y: e.clientY })
     }

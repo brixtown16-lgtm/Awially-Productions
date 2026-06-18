@@ -3,6 +3,7 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CustomCursor from '@/components/CustomCursor'
+import PageTransition from '@/components/PageTransition'
 
 export const metadata: Metadata = {
   title: 'Awially Productions - Premium Media Production',
@@ -23,7 +24,9 @@ export default function RootLayout({
         <CustomCursor />
         <Navbar />
         <main className="min-h-screen">
-          {children}
+          <PageTransition>
+            {children}
+          </PageTransition>
         </main>
         <Footer />
       </body>

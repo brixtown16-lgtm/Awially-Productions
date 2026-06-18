@@ -75,7 +75,7 @@ export default function Hero() {
         </motion.div>
 
         <motion.h1
-          className="text-6xl md:text-8xl font-light tracking-tight mb-6 leading-tight"
+          className="text-5xl md:text-7xl lg:text-8xl font-light tracking-tight mb-6 leading-tight px-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
@@ -84,7 +84,7 @@ export default function Hero() {
         </motion.h1>
 
         <motion.p
-          className="text-xl md:text-2xl text-gray-300 mb-12 font-light max-w-2xl mx-auto"
+          className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-10 md:mb-12 font-light max-w-2xl mx-auto px-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
@@ -93,20 +93,20 @@ export default function Hero() {
         </motion.p>
 
         <motion.div
-          className="flex gap-6 justify-center flex-wrap"
+          className="flex gap-4 md:gap-6 justify-center flex-wrap px-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
         >
           <Link
             href="/portfolio"
-            className="px-10 py-4 bg-white text-black font-medium hover:bg-gray-200 transition-all hover:scale-105"
+            className="px-6 md:px-10 py-3 md:py-4 bg-white text-black font-medium hover:bg-gray-200 transition-all hover:scale-105 text-sm md:text-base"
           >
             View Portfolio
           </Link>
           <Link
             href="/book"
-            className="px-10 py-4 border border-white text-white font-medium hover:bg-white hover:text-black transition-all"
+            className="px-6 md:px-10 py-3 md:py-4 border border-white text-white font-medium hover:bg-white hover:text-black transition-all text-sm md:text-base"
           >
             Get Started
           </Link>

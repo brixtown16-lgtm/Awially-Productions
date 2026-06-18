@@ -53,11 +53,11 @@ export default function Testimonials() {
           What Our Clients Say
         </motion.h2>
 
-        <div className="relative h-64 md:h-48">
+        <div className="relative">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentIndex}
-              className="absolute inset-0 flex flex-col items-center justify-center"
+              className="flex flex-col items-center justify-center"
               initial={{ opacity: 0, y: 20, scale: 0.95 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -20, scale: 0.95 }}
